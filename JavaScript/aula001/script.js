@@ -1,0 +1,1 @@
+document.write("<p style='color:#f00'>Curso de<br>JavaScript</p>");

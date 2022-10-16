@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CFB Cursos - JavaScript</title>
+	<style>
+		#carro{
+			width: 160px;
+			height: 250px;
+		}
+		.c1{
+			background-image: url("imgs/c1.jpg");
+		}
+		.c2{
+			background-image: url("imgs/c2.jpg");
+		}
+		.c3{
+			background-image: url("imgs/c3.jpg");
+		}
+	</style>
+	<script>
+		//setAttribute("class","c1"); - Adiciona a classe c1(class="c1")na div com id="carro"
+		function trocaCarro(c){
+			var x=c;
+			var obj=document.getElementById("carro");
+			switch(x){
+				case 1:
+					obj.setAttribute("class","c1");
+					break;
+				case 2:
+					obj.setAttribute("class","c2");
+					break;
+				case 3:
+					obj.setAttribute("class","c3");
+					break;
+				default:
+				alert("Erro desconhecido");
+				console.log("Erro desconhecido");
+			}
+		}
+		function removerCarro(){
+			var obj=document.getElementById("carro");
+			obj.removeAttribute("class");//Remove o atributo class da div com id carro(id="carro")
+		}
+		function verificar(){
+			var obj=document.getElementById("carro");
+			if(obj.hasAttribute("class")){
+				alert("Atributo class está na tag");
+			}else{
+				alert("Atributo clss não está na tag");
+			}
+		}
+	</script>
+</head>
+<body>
+	<button onclick="trocaCarro(1)">Carro 1</button>
+	<button onclick="trocaCarro(2)">Carro 2</button>
+	<button onclick="trocaCarro(3)">Carro 3</button>
+	<button onclick="removerCarro()">Remover Carro</button>
+	<button onclick="verificar()">Verificar</button>
+	<div id="carro"></div>
+</body>
+</html>

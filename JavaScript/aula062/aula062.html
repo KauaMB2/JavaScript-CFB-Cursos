@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CFB Cursos - Javascript</title>
+	<script>
+		var minhaJanela1,minhaJanela2;
+		function abreJ(){
+			minhaJanela1=window.open("tmp.html","_blank","width=300,heigth=300,top=300,left=300");
+			minhaJanela2=window.open("tmp.html","cfb")
+		}
+		function fechaJ(){
+			minhaJanela1.close();
+			minhaJanela2.close();
+		}
+	</script>
+</head>
+<body>
+	<button onclick="abreJ()">Abre</button>
+	<button onclick="fechaJ()">Fecha</button>
+	<iframe name="cfb"></iframe>
+</body>
+</html>
