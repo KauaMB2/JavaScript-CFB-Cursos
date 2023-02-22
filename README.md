@@ -19,5 +19,15 @@
 
 <hr>
 
+Callbacks, Promises, async functions, and Async/await are concepts used in asynchronous programming in JavaScript to deal with operations that may take time to complete, such as HTTP requests, accessing databases, and processing files.
+
+Callbacks are functions that are passed as arguments to other functions and are called when an asynchronous operation is completed. Callbacks have been used to handle asynchronous code in JavaScript for a long time, but they can make the code difficult to read and maintain, especially when there are many nested callbacks.
+
+Promises are an asynchronous programming model introduced in ECMAScript 2015 (also known as ES6) to handle the problem of nested callbacks. Promises represent a value that may not be available yet but will be resolved (or rejected) at some future point. This allows asynchronous code to be handled in a clearer and more structured way than with callbacks.
+
+Async functions are functions that return a Promise. They are declared with the "async" keyword and allow asynchronous code to be written as if it were synchronous. The use of async functions makes the code more readable and easier to understand, as it avoids the need to use callbacks or Promises directly.
+
+Async/await is a language construct introduced in ECMAScript 2017 that further simplifies the use of Promises in JavaScript. Async/await allows asynchronous code to be written as if it were synchronous, without the need to use callbacks or Promise chains. This makes the code even more readable and easy to understand. Async/await is a combination of async functions and the "await" keyword, which allows Promises to be treated in a more synchronous way.
+
 ## Click on the image below to access the course:
 <a href="https://www.youtube.com/watch?v=lcKo-ycLDNw&list=PLx4x_zx8csUj3IbPQ4_X5jis_SkCol3eC"><img src="img\logo.png" class="img"></a>
